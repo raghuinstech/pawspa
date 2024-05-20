@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWSPA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cinzel', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 0.2em;
+            display: flex;
+            justify-content: space-between;
+    
+        }
+         header img{
+                   margin-left:5px;
+                   width:50px;
+                   height:50px;
+                   border-radius:50%;
+                   object-fit:cover;
+                   align-items:center;
+                   padding:1 em;
+        }
+        header h1 {
+            margin-right:700px;
+        }
+        .buttons {
+            object-fit:cover;
+        }
+        button {
+            margin: 0 1.5em;
+            padding: 0.7em 1em;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #feb47b, #ff7e5f);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        main {
+            padding: 4em 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            max-height: calc(100vh - 200px);
+        }
+        footer {
+            background-color: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            margin-top: 1em;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 0.5em;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ddd;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src= "C:/Users/tanma/Downloads/5.jpg.jpg" alt="logo">
+        <h1>PAWSPA</h1>
+        <div class="buttons">
+            <button onclick="navigateTo('home')">Home</button>
+            <button onclick="navigateTo('about')">About</button>
+            <button onclick="navigateTo('contact')">Contact</button>
+        </div>
+    </header>
+    <Main style="background-image:url('D:/website/1.jpeg');
+                 background-size:cover;
+                 background-position:center;>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to PAW SPA ! Here we provide the best services to the paws.Pawspa  treats your dog with all the regular grooming services, but the days of a basic wash, cut, and trim are long gone.In this day and age, groomers and pet carers are going all out to treat your special buddy. A dog spa usually comes with a variety of lavish options and services that will fulfill all your pupper’s wishes. !!
+
+</p>
+<img src="D:/website/2.jpeg" alt="PAWPAW">
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>We are all well aware of how wonderful a good spa day can be for ourselves – just a few hours at the spa can help us wind down, relax, and shake off a long day’s worth of stress.But have you thought about what a spa can do for your precious little pup? A Paw spa is a perfect choice if you are looking for a way to pamper your furry friend.</p>
+      <img src="D:/website/3.jpeg" alt="About">
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Have queries or feedback?
+             Email us through pawspa@gmail.com.Contact : 1717XXXX00.
+             </p>
+        <img src="D:/website/4.jpeg" alt="contact">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 pawspaWebsite</p>
+        <div class="social-icons">
+            <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
